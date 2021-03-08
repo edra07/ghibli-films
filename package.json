@@ -1,0 +1,49 @@
+{
+  "name": "ghibli-films",
+  "version": "1.0.0",
+  "description": "Prueba realizada para Resuelve tu deuda. Consiste en una aplicación que liste y permita buscar películas de estudio Ghibli",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "dev": "parcel src/index.html",
+    "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edra07/ghibli-films.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edra07/ghibli-films/issues"
+  },
+  "homepage": "https://github.com/edra07/ghibli-films#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "npm-force-resolutions": "^0.0.10",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "@reach/router": "^1.3.4"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
+  "resolutions": {
+    "@babel/preset-env": "7.13.8",
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
+  }
+}
